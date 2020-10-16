@@ -28,6 +28,8 @@ const makeGroup = groupNum => {
     allGroup[ybShuffled.indexOf(member) % groupNum].push(member))
   obShuffled.forEach(member =>
     allGroup[obShuffled.indexOf(member) % groupNum].push(member))
+  // https://pewww.tistory.com/12
+  // forEach, map
 
   return allGroup
 }
