@@ -21,7 +21,7 @@ const makeGroup = groupNum => {
   let allGroup = []
 
   for (let i = 0; i < groupNum; i++) {
-    allGroup.push([`${i}`])
+    allGroup.push([`${i+1}`])
   } // 초기화 방법 ㅠㅅㅠ?
 
   ybShuffled.forEach(member =>
