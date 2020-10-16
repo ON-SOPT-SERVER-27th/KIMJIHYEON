@@ -1,6 +1,6 @@
 const members = require('./member')
-const ybMembers = members.filter(mem => mem.status == 'YB');
-const obMembers = members.filter(mem => mem.status == 'OB');
+const ybMembers = members.filter(mem => mem.status == 'YB')
+const obMembers = members.filter(mem => mem.status == 'OB')
 
 const shuffleMember = array => {
   for (let i = array.length - 1; i > 0; i--) {
@@ -20,12 +20,12 @@ const makeGroup = groupNum => {
 
   let allGroup = []
 
-  for (var i = 0; i < groupNum; i++) {
+  for (let i = 0; i < groupNum; i++) {
     allGroup.push([`${i}`])
   } // 초기화 방법 ㅠㅅㅠ?
 
   ybShuffled.forEach(member =>
-    allGroup[ybShuffled.indexOf(mmemberem) % groupNum].push(member))
+    allGroup[ybShuffled.indexOf(member) % groupNum].push(member))
   obShuffled.forEach(member =>
     allGroup[obShuffled.indexOf(member) % groupNum].push(member))
 
