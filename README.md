@@ -1,6 +1,3 @@
-# KIMJIHYEON
+### 4th-seminar level1
 
-이름 : 김지현 <p>
-사는 곳 : 서초구 잠원동 <p>
-나이 : 22 <p>
-취미 : 운동
+<img src="/Users/kimjihyeon/Desktop/스크린샷 2020-12-23 오후 11.37.54.png" alt="스크린샷 2020-12-23 오후 11.37.54" style="zoom:50%;" />
