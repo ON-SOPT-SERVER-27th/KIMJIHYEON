@@ -4,7 +4,11 @@ const crypto = require('crypto')
 const pwd = 'sopt1234';
 const fileName = 'useFSpwd';
 
-const base64 = crypto.createHash('sha512').update(pwd).digest('base64');
-fs.writeFile(`${fileName}.txt`, base64, () => {
-    console.log(`file[${fileName}] write complete`);
-});
+crypto.randomBytes(64, (err, buf) => {
+    // buf는 버퍼형식이기 때문에 base64 salt로 변경
+    crypto.pbkdf2('비밀번호', buf.toString('base64'), 100000, 64, 'sha512', (err, key) => {
+        fs.writeFile(`${fileName}.txt`, key.toString('base64'), () => {
+            console.log(`file[${fileName}] write complete`);
+        });
+    });
+  });
