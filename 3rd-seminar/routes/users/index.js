@@ -5,7 +5,6 @@ const util = require('../../modules/util');
 const responseMessage = require('../../modules/responseMessage');
 const statusCode = require('../../modules/statusCode');
 let userDB = require('../../modules/users');
-const user = require('../../../4th-seminar/models/user');
 
 router.post('/signup', (req, res) => {
     //1. req.body에서 데이터 가져오기
